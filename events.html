@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Nexus - Events</title>
+    <link rel="stylesheet" href="events.css">
+    <script src="https://kit.fontawesome.com/170875e863.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    @media screen and (max-width: 800px) {
+
+        *,
+        h1 {
+            font-size: 15px;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 4rem;
+            font-size: 25px;
+            color: #E384FF;
+        }
+
+        .logonav {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        img {
+            width: 80%;
+        }
+
+        .big {
+            display: none;
+        }
+
+        .short {
+            display: inline-block;
+        }
+
+        .registrations {
+            margin-top: 2rem;
+            margin-left: 0;
+            margin-right: 0;
+            text-align: center;
+        }
+
+        .footer {
+            /* bottom: 0; */
+            font-size: 9px;
+            color: #E384FF;
+            margin-top: 70%;
+            text-align: center;
+        }
+
+        .content {
+            padding: 20px 0px;
+            /* background-color: white; */
+            position: relative;
+            border-radius: 6px;
+        }
+
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid white;
+            /* border-width: 10px 0 10px 10px; */
+            border-color: transparent transparent transparent #191825;
+        }
+
+        /* Add arrows to the right container (pointing left) */
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid white;
+            /* border-width: 10px 10px 10px 0; */
+            border-color: transparent #E384FF transparent transparent;
+        }
+
+    }
+</style>
+
+<body>
+    <nav>
+        <!-- Navbar goes here -->
+        <div class="logonav"><a href="index.html"> Neural Nexus</a></div>
+        <div class="links">
+            <!-- <a href="register.html" rel="noopener noreferrer">REGISTER</a> -->
+            <a href="events.html" rel="noopener noreferrer">EVENTS</a>
+            <a href="about.html" rel="noopener noreferrer">ABOUT</a>
+
+            <a href="http://" rel="noopener noreferrer">DISCORD</a>
+        </div>
+    </nav>
+    <div class="timeline">
+        <div class="container left">
+            <div class="content">
+                <div class="content">
+                    <h2>CodeCon Hackathon <i class="fa-solid fa-circle" style="color: #00ff7b;"></i></h2>
+                    <h4>13th July 2023</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat tempore inventore adipisci
+                        consectetur molestiae rerum sed quo tenetur, dolor perferendis quam? Corrupti, enim doloremque.
+                    </p>
+                    <h4><a style="color: white;" href="codecon_index.html"><i class="fa-sharp fa-solid fa-link"></i>
+                            About the Hackathon</a></h4>
+                    <h4><a style="color: white;" href="codecon_index.html"><i class="fa-sharp fa-solid fa-link"></i>
+                            Registration
+                            Link</a></h4>
+                    <p id="demo">
+                    <h2></h2>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <div class="content">
+                    <h2>Machine Learning Session by Mr. Chirag Soni</h2>
+                    <h4>22nd June 2023</h4>
+                    <p>On June 22, 2023, a highly anticipated Machine Learning workshop was conducted by the esteemed
+                        Analyst and ML practitioner who is currently working with paypal as a Sr. Product manager, Mr.
+                        Chirag Soni, for an enthusiastic audience of 150+ students. The event took place at Assembly
+                        hall, providing ample space to accommodate the large group of attendees.</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <div class="content">
+                    <h2>Machine Learning Ideathon</h2>
+                    <h4>5th May 2023</h4>
+                    <p>The club organized a Machine Learning Ideathon on 5
+
+                        th May, 2023 that brought together
+                        students from different backgrounds to develop innovative solutions on various themes such as
+                        Fintech, E-Commerce Excursion, M2l2 (Manufacturing Mastery, Logistic Leap), Robotics
+                        Rampage, Cybersecurity Catalyst And Internet Of Ideas that allow to understand how technology
+                        can be used to drive innovation and growth.</p>
+                    <p>
+                        With an enthusiastic response from all attendees so far, the Neural Nexus club is set to
+                        continue
+                        making strides in furthering knowledge and awareness of Artificial Intelligence and Machine
+                        Learning.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <h2>Inaugral Event</h2>
+                <h4>10th April 2023</h4>
+                <p>The inaugural event that introduced the club on 10
+
+                    th April, 2023, followed by Cognitive Combat
+                    Quiz challenge that tested knowledge on the latest advances in Artificial Intelligence, Machine
+                    Learning and Deep Learning on 10
+
+                    th April the club has been consistently providing exciting events
+
+                    for students.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("July 10, 2023 23:59:59").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + ": " + hours + "h " + ": "
+            + minutes + "m " + ": " + seconds + "s ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
+
+</html>
